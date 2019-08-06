@@ -38,9 +38,12 @@ function App() {
                     <Route
                         exact
                         path="/productos"
-                        render={() => <Productos productos={productos} 
-                          setRecargar={setRecargar}
-                        />}
+                        render={() => (
+                            <Productos
+                                productos={productos}
+                                setRecargar={setRecargar}
+                            />
+                        )}
                     />
                     <Route
                         exact
@@ -53,19 +56,21 @@ function App() {
                     <Route
                         exact
                         path="/productos/editar/:id"
-                        render={props => {  
+                        render={props => {
                             // Tomar el id del producto
                             const idProducto = parseInt(props.match.params.id);
 
                             //el producto que se pasa al state
-                            const producto = productos.filter(producto => 
-                              producto.id === idProducto)
+                            const producto = productos.filter(
+                                producto => producto.id === idProducto
+                            );
 
-                            return ( <EditarProducto 
-                              producto={producto[0]}
-                              setRecargar={setRecargar}
-                              />
-                              );
+                            return (
+                                <EditarProducto
+                                    producto={producto[0]}
+                                    setRecargar={setRecargar}
+                                />
+                            );
                         }}
                     />
                 </Switch>

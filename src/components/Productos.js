@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
 import ProductoLista from "./ProductoLista";
 
-function Productos({ productos, setRecargar }) {
+function Productos(props) {
+
+    const { productos, setRecargar } = props;
+
     //console.log("desde productos");
     //console.log(productos);
 
@@ -10,7 +13,7 @@ function Productos({ productos, setRecargar }) {
             <h1 className="text-center">Productos</h1>
             <ul className="list-group mt-5">
                 {productos.map(producto => (
-                    <ProductoLista 
+                    <ProductoLista
                         key={producto.id}
                         producto={producto}
                         setRecargar={setRecargar}

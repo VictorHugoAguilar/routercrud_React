@@ -4,10 +4,11 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 //Componente para redirigir a otro componente
-import {withRouter} from 'react-router-dom';
+import { withRouter } from "react-router-dom";
 
+function AgregarProducto(props) {
 
-function AgregarProducto( {setRecargar, history}) {
+    const { setRecargar, history } = props;
 
     // state
     const [nombre, setNombre] = useState("");
@@ -38,25 +39,25 @@ function AgregarProducto( {setRecargar, history}) {
                 categoria: categoria
             });
             //console.log(resultado);
-            if(resultado.status === 201 ){
+            if (resultado.status === 201) {
                 Swal.fire(
-                    'Producto Creado!',
-                    'El producto se creeo correctamente!',
-                    'success'
-                  )
-                  setRecargar(true);
+                    "Producto Creado!",
+                    "El producto se creeo correctamente!",
+                    "success"
+                );
+                setRecargar(true);
             }
         } catch (error) {
             //console.log(error);
             Swal.fire({
-                type: 'error',
-                title: 'Error',
-                text: 'Un error en la inserción!'
-              })
+                type: "error",
+                title: "Error",
+                text: "Un error en la inserción!"
+            });
         }
 
         // Redirigir a productos al usuario
-        history.push('/productos');
+        history.push("/productos");
     };
 
     return (

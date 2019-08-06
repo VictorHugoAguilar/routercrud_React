@@ -23,16 +23,20 @@ function EditarProducto(props) {
         const nuevoPrecio = precioPlatilloRef.current.value,
             nuevoNombre = nombrePlatilloRef.current.value;
 
-        if (nuevoPrecio === "" || nuevoNombre === "" || categoria === "") {
+        // revisar si cambio la categoria de lo contrario asignar el mismo valor
+        let categoriaPlatillo =
+            categoria === "" ? producto.categoria : categoria;
+
+        if (
+            nuevoPrecio === "" ||
+            nuevoNombre === "" ||
+            categoriaPlatillo === ""
+        ) {
             setError(true);
             return;
         }
 
         setError(false);
-
-        // revisar si cambio la categoria de lo contrario asignar el mismo valor
-        let categoriaPlatillo =
-            categoria === "" ? producto.categoria : categoria;
 
         // Obtener los valores del formulario
         const editarPlatillo = {

@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-function ProductoLista({ producto,  setRecargar }) {
+function ProductoLista(props) {
+
+    const { producto, setRecargar } = props;
+
     const eliminarProducto = id => {
         // console.log('Eliminar ' + id);
 

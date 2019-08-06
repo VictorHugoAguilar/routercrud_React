@@ -7,14 +7,14 @@
       "id": 1
     },
     {
-      "precioPlatillo": "300",
       "nombrePlatillo": "Rib Eye 400g",
+      "precioPlatillo": "300",
       "categoria": "cortes",
       "id": 2
     },
     {
-      "precioPlatillo": "100",
       "nombrePlatillo": "Cesar",
+      "precioPlatillo": "100",
       "categoria": "ensalada",
       "id": 3
     },
@@ -29,24 +29,6 @@
       "precioPlatillo": "250",
       "categoria": "cortes",
       "id": 5
-    },
-    {
-      "nombrePlatillo": "Flan de huevo",
-      "precioPlatillo": "50",
-      "categoria": "postre",
-      "id": 13
-    },
-    {
-      "nombrePlatillo": "Flan de cafe",
-      "precioPlatillo": "65",
-      "categoria": "postre",
-      "id": 14
-    },
-    {
-      "nombrePlatillo": "Manzana",
-      "precioPlatillo": "10",
-      "categoria": "postre",
-      "id": 15
     }
   ]
 }
