@@ -31,48 +31,6 @@
       "id": 5
     },
     {
-      "nombrePlatillo": "Entraña 250g",
-      "precioPlatillo": "250",
-      "categoria": "cortes",
-      "id": 6
-    },
-    {
-      "nombrePlatillo": "Entraña 250g",
-      "precioPlatillo": "250",
-      "categoria": "cortes",
-      "id": 7
-    },
-    {
-      "nombrePlatillo": "Entraña 250g",
-      "precioPlatillo": "250",
-      "categoria": "cortes",
-      "id": 8
-    },
-    {
-      "nombrePlatillo": "Entraña 250g",
-      "precioPlatillo": "250",
-      "categoria": "cortes",
-      "id": 9
-    },
-    {
-      "nombrePlatillo": "Entraña 250g",
-      "precioPlatillo": "250",
-      "categoria": "cortes",
-      "id": 10
-    },
-    {
-      "nombrePlatillo": "Entraña 250g",
-      "precioPlatillo": "250",
-      "categoria": "cortes",
-      "id": 11
-    },
-    {
-      "nombrePlatillo": "Entraña 250g",
-      "precioPlatillo": "250",
-      "categoria": "cortes",
-      "id": 12
-    },
-    {
       "nombrePlatillo": "Flan de huevo",
       "precioPlatillo": "50",
       "categoria": "postre",
@@ -83,6 +41,12 @@
       "precioPlatillo": "65",
       "categoria": "postre",
       "id": 14
+    },
+    {
+      "nombrePlatillo": "Manzana",
+      "precioPlatillo": "10",
+      "categoria": "postre",
+      "id": 15
     }
   ]
 }

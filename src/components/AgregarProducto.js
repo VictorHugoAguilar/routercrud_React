@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import {withRouter} from 'react-router-dom';
 
 
-function AgregarProducto({history}) {
+function AgregarProducto( {setRecargar, history}) {
 
     // state
     const [nombre, setNombre] = useState("");
@@ -44,6 +44,7 @@ function AgregarProducto({history}) {
                     'El producto se creeo correctamente!',
                     'success'
                   )
+                  setRecargar(true);
             }
         } catch (error) {
             console.log(error);
