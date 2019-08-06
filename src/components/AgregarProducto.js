@@ -37,7 +37,7 @@ function AgregarProducto( {setRecargar, history}) {
                 precioPlatillo: precio,
                 categoria: categoria
             });
-            console.log(resultado);
+            //console.log(resultado);
             if(resultado.status === 201 ){
                 Swal.fire(
                     'Producto Creado!',
@@ -47,7 +47,7 @@ function AgregarProducto( {setRecargar, history}) {
                   setRecargar(true);
             }
         } catch (error) {
-            console.log(error);
+            //console.log(error);
             Swal.fire({
                 type: 'error',
                 title: 'Error',

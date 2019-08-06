@@ -58,9 +58,10 @@ function App() {
                             //el producto que se pasa al state
                             const producto = productos.filter(producto => 
                               producto.id === idProducto)
-                                                          
+
                             return ( <EditarProducto 
                               producto={producto[0]}
+                              setRecargar={setRecargar}
                               />
                               );
                         }}

@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import ProductoLista from "./ProductoLista";
 
 function Productos({ productos }) {
-    console.log("desde productos");
-    console.log(productos);
+    //console.log("desde productos");
+    //console.log(productos);
 
     return (
         <Fragment>
