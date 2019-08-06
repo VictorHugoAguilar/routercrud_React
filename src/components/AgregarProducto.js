@@ -51,7 +51,7 @@ function AgregarProducto( {setRecargar, history}) {
             Swal.fire({
                 type: 'error',
                 title: 'Error',
-                text: 'Un error en la inserción!',
+                text: 'Un error en la inserción!'
               })
         }
 

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import ProductoLista from "./ProductoLista";
 
-function Productos({ productos }) {
+function Productos({ productos, setRecargar }) {
     //console.log("desde productos");
     //console.log(productos);
 
@@ -13,6 +13,7 @@ function Productos({ productos }) {
                     <ProductoLista 
                         key={producto.id}
                         producto={producto}
+                        setRecargar={setRecargar}
                     />
                 ))}
             </ul>

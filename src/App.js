@@ -38,7 +38,9 @@ function App() {
                     <Route
                         exact
                         path="/productos"
-                        render={() => <Productos productos={productos} />}
+                        render={() => <Productos productos={productos} 
+                          setRecargar={setRecargar}
+                        />}
                     />
                     <Route
                         exact
