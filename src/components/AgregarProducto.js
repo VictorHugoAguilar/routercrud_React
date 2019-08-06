@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Error from "./Error";
+import axios from "axios";
 
 function AgregarProducto() {
     const [nombre, setNombre] = useState("");
@@ -11,7 +12,7 @@ function AgregarProducto() {
         setCategoria(e.target.value);
     };
 
-    const agregarProducto = e => {
+    const agregarProducto = async e => {
         e.preventDefault();
 
         if (nombre === "" || categoria === "" || precio === "") {
@@ -22,6 +23,18 @@ function AgregarProducto() {
         setError(false);
 
         // Crear nuevo producto
+        try {
+            const url = "http://localhost:4000/restaurant";
+            const resultado = await axios.post(url, {
+                nombrePlatillo: nombre,
+                precioPlatillo: precio,
+                categoria: categoria
+            });
+            console.log(resultado);
+        } catch (error) {
+            console.log(error);
+
+        }
     };
 
     return (
