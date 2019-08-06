@@ -21,7 +21,7 @@ const Header = () => (
                     <NavLink
                         to="/nuevo-producto"
                         className="nav-link"
-                        activeClassName
+                        activeClassName="active"
                     >
                         Nuevo Producto
                     </NavLink>

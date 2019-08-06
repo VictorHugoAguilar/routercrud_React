@@ -6,7 +6,7 @@ const Footer = () => {
     var anio = fecha.getFullYear();
     
     return ( 
-        <p className="text-center p-2 mt-4">© Todos los derechos reservados Victor Hugo Aguilar {anio}</p>
+        <p className="text-center p-2 mt-4">© Todos los derechos reservados Victor Hugo Aguilar - {anio}</p>
      );
 }
  
