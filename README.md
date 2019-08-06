@@ -4,6 +4,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+Para iniciar este proyecto hay que instalar json.server
+
+### sudo npm install -g json-server
+
+y antes que nada ejecutar
+
+### json-server db.json -p 4000 
+
+y crear un archico json db.json con la estructura de que necesitaremos para nuestro proyecto un ejemplo:
+
+{
+  "restaurant": [
+    {
+      "nombrePlatillo": "Cheescake",
+      "precioPlatillo": "123",
+      "categoria": "postre",
+      "id": 1
+    }
+    ]
+}
+
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
